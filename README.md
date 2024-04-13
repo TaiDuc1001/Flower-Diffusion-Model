@@ -20,19 +20,19 @@ This project implements a generative model based on the UNET architecture couple
 
 ## Offset cosine diffusion schedule
 - The offset cosine diffusion schedule is a function used in the diffusion process to gradually reduce noise variance by following a cosine curve with an offset. 
-- This function ensures smoother diffusion of noise, leading to more stable and coherent denoised images. \
+- This function ensures smoother diffusion of noise, leading to more stable and coherent denoised images. 
 ![diffusion_schedules](images/diffusion_schedules.png)
 
 ## Sinusoidal Embedding
 - The sinusoidal embedding function is utilized for positional encoding, similar to the mechanism used in Transformer models.
 - It converts a scalar value representing noise variance into a sinusoidal waveform, allowing the model to learn positional information along different dimensions.
-- This helps the model better capture spatial relationships within the input data. \
+- This helps the model better capture spatial relationships within the input data. 
 ![sinusoidal_embedding](images/sinusoidal_embedding.png)
 
 ## Results
 - The generated images showcase the effectiveness of the diffusion UNET model in generating high-quality flower images.
 - As the diffusion steps progress, the noisy input images gradually transform into more coherent and visually appealing outputs.
-- The generated images demonstrate the model's ability to capture fine details and textures while preserving the overall structure of the flowers. \
+- The generated images demonstrate the model's ability to capture fine details and textures while preserving the overall structure of the flowers. 
 
 ![Result Image 1](images/result_1.png)
 ![Result Image 2](images/result_2.png)
@@ -41,7 +41,10 @@ This project implements a generative model based on the UNET architecture couple
 
 ## Acknowledgements
 
-This project's idea is inspired by the concepts presented in the "Generative Deep Learning" [book](https://github.com/davidADSP/Generative_Deep_Learning_2nd_Edition/tree/main) . We express our gratitude to the authors and contributors of the book for their insightful exploration of generative models and their applications. Their work serves as a valuable resource and foundation for this project.
+- This project's idea is inspired by the concepts presented in the "Generative Deep Learning" [book](https://github.com/davidADSP/Generative_Deep_Learning_2nd_Edition/tree/main).
+- We express our gratitude to the authors and contributors of the book for their insightful exploration of generative models and their applications.
+- Their work serves as a valuable resource and foundation for this project.
+- We also acknowledge the use of the [Oxford 102 Flower dataset](https://www.kaggle.com/c/oxford-102-flower-pytorch), which provided the image data used for training and evaluation in this project.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
